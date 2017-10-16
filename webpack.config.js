@@ -3,8 +3,8 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        'currency-map-country': './currency-map-country.js',
-        'currency-map-country.min': './currency-map-country.js'
+        'currency-map-country': './index.js',
+        'currency-map-country.min': './index.js'
     },
     output: {
         filename: '[name].js',

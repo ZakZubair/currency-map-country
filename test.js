@@ -1,5 +1,5 @@
 import chai from 'chai';
-import { getCountry, getCurrency, getCurrencyAbbreviation, formatCurrency, getCountryByAbbreviation } from './currency-map-country';
+import { getCountry, getCurrency, getCurrencyAbbreviation, getCountryByAbbreviation } from './index';
 
 describe('country-currency-map', () => {
     it('getCountry returns expected value', () => {
@@ -32,21 +32,6 @@ describe('country-currency-map', () => {
     it('getCurrencyAbbreviation returns undefined', () => {
         let result = getCurrencyAbbreviation('Unknown Country');
         chai.expect(result).to.be.undefined;
-    });
-
-    it('formatCurrency returns expected value', () => {
-        let result = formatCurrency('100,000', 'GBP');
-        chai.expect(result).to.equal('£100,000');
-    });
-
-    it('formatCurrency with unknown currency', () => {
-        let result = formatCurrency('100,000', 'NONE');
-        chai.expect(result).to.equal('100,000 NONE');
-    });
-
-    it('formatCurrency decodes', () => {
-        let result = formatCurrency('100,000', 'EUR');
-        chai.expect(result).to.equal('€100,000');
     });
 
     it('getCountryByAbbreviation returns expected value', () => {

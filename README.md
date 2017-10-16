@@ -1,4 +1,10 @@
-# currency-map-country
+<h1 align="center">
+  currency-map-country
+
+  ![](https://img.shields.io/badge/licence-MIT-blue.svg?style=flat-square)
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+</h1>
+
 Mapping of countries and their primary currency along with currency data.
 
 ## Installation
@@ -29,14 +35,6 @@ getCurrency('CAD'); //=> { name: 'Canadian Dollar (CAD)', symbolFormat: 'C${#}' 
 import { getCurrencyAbbreviation } from 'currency-map-country';
 getCurrencyAbbreviation('UK'); //=> 'GBP'
 getCurrencyAbbreviation('Canada'); //=> 'CAD'
-```
-
-### Format currency
-
-```js
-import { formatCurrency } from 'currency-map-country';
-formatCurrency('100,000', 'GBP'); //=> '£100,000'
-formatCurrency('100,000', 'EUR'); //=> '€100,000'
 ```
 
 ### Get Currency List

@@ -2,11 +2,11 @@
   "name": "currency-map-country",
   "version": "1.0.0",
   "description": "Mapping of countries and their primary currency.",
-  "main": "lib/currency-map-country.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha -R min -r babel-register --reporter progress test.js",
     "lint": "eslint --config .eslintrc *.js",
-    "compile": "babel -d lib/ currency-map-country.js country-map.js currency-map.js && webpack",
+    "compile": "babel -d lib/ index.js src/map/country-map.js src/map/currency-map.js && webpack",
     "prepublish": "npm run test && npm run lint && npm run compile"
   },
   "keywords": [
@@ -40,9 +40,7 @@
     "webpack": "^2.3.2"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.4.0",
-    "he": "^1.1.1",
-    "lodash": "^4.17.4"
+    "lodash.findkey": "^4.6.0"
   },
   "bugs": {
     "url": "https://github.com/ZakZubair/currency-map-country/issues"
