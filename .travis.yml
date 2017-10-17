@@ -3,6 +3,7 @@ node_js:
   - "node"
 before_install:
   - npm i -g npm
+  - npm i eslint-plugin-react@latest
 script:
   - npm run test
   - npm run lint
