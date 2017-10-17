@@ -1,6 +1,6 @@
 {
   "name": "currency-map-country",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Mapping of countries and their primary currency.",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -37,8 +37,7 @@
     "eslint": "^3.19.0",
     "eslint-config-payscale": "0.0.8",
     "mocha": "^3.2.0",
-    "path": "^0.12.7",
-    "webpack": "^2.3.2"
+    "path": "^0.12.7"
   },
   "dependencies": {
     "lodash.findkey": "^4.6.0"
