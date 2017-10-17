@@ -1,12 +1,13 @@
 {
   "name": "currency-map-country",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mapping of countries and their primary currency.",
   "main": "lib/index.js",
+  "module": "src/index.js",
   "scripts": {
-    "test": "mocha -R min -r babel-register --reporter progress test.js",
+    "test": "mocha -R min -r babel-register --reporter progress test/test.js",
     "lint": "eslint --config .eslintrc *.js",
-    "compile": "babel -d lib/ index.js src/map/country-map.js src/map/currency-map.js && webpack",
+    "compile": "babel src -d lib",
     "prepublish": "npm run test && npm run lint && npm run compile"
   },
   "keywords": [

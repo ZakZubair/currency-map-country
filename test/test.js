@@ -1,5 +1,5 @@
 import chai from 'chai';
-import { getCountry, getCurrency, getCurrencyAbbreviation, getCountryByAbbreviation } from './index';
+import { getCountry, getCurrency, getCurrencyAbbreviation, getCountryByAbbreviation } from '../src/index';
 
 describe('country-currency-map', () => {
     it('getCountry returns expected value', () => {
