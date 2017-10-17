@@ -1,9 +1,9 @@
 {
   "name": "currency-map-country",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Mapping of countries and their primary currency.",
-  "main": "lib/index.js",
-  "module": "src/index.js",
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "test": "mocha -R min -r babel-register --reporter progress test/test.js",
     "lint": "eslint --config .eslintrc *.js",
