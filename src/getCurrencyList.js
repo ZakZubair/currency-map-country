@@ -1,7 +1,7 @@
 import currencyMap from './map/currency-map';
 
 const getCurrencyList = () => {
-    let currencyArray = Object.keys(currencyMap).map(currencyAbbr => {
+    const currencyArray = Object.keys(currencyMap).map(currencyAbbr => {
         return {
             abbr: currencyAbbr,
             name: currencyMap[currencyAbbr].name,

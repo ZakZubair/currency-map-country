@@ -1,11 +1,10 @@
 import currencyMap from './map/currency-map';
+import findKey from 'lodash.findkey';
 
-const getCurrencyAbbreviationFromName = (currencyName) => {
-    let findKey = require('lodash.findkey');
-    let abbr =  findKey(currencyMap, function(c) {
+const getCurrencyAbbreviationFromName = currencyName => {
+    return findKey(currencyMap, c => {
         return c.name === currencyName;
     });
-    return abbr;
 };
 
 export default getCurrencyAbbreviationFromName;

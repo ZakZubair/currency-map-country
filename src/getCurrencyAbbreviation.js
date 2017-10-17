@@ -1,9 +1,9 @@
 import getCountry from './getCountry';
 
 const getCurrencyAbbreviation = (countryName) => {
-    let country = getCountry(countryName);
+    const country = getCountry(countryName);
     if(country) {
-        return country.currency;
+        return country.cur;
     }
     return undefined;
 };

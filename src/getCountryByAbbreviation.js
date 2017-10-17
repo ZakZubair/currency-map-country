@@ -1,9 +1,8 @@
 import countryMap from './map/country-map';
+import findKey from 'lodash.findkey';
 
 const getCountryByAbbreviation = (countryAbbr) => {
-    let findKey = require('lodash.findkey');
-    let country = findKey(countryMap, { 'abbreviation': countryAbbr });
-    return country;
+    return findKey(countryMap, { 'abbr': countryAbbr });
 };
 
 export default getCountryByAbbreviation;

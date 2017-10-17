@@ -4,8 +4,8 @@ import { getCountry, getCurrency, getCurrencyAbbreviation, getCountryByAbbreviat
 describe('country-currency-map', () => {
     it('getCountry returns expected value', () => {
         let result = getCountry('USA');
-        chai.expect(result.abbreviation).to.equal('US');
-        chai.expect(result.currency).to.equal('USD');
+        chai.expect(result.abbr).to.equal('US');
+        chai.expect(result.cur).to.equal('USD');
     });
 
     it('getCountry returns undefined', () => {
@@ -40,7 +40,7 @@ describe('country-currency-map', () => {
     });
 
     it('getCountryByAbbreviation returns undefined', () => {
-        let result = getCountryByAbbreviation('USA');
+        let result = getCountryByAbbreviation('United Kingdom');
         chai.expect(result).to.be.undefined;
     });
 });
