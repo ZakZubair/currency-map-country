@@ -1,6 +1,6 @@
 {
   "name": "currency-map-country",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Mapping of countries and their primary currency.",
   "main": "./lib/index.js",
   "module": "./src/index.js",
@@ -16,7 +16,7 @@
     "currency",
     "country"
   ],
-  "author": "ZakZubair <zakaaf@hotmail.co.uk>",
+  "author": "Zak Zubair <zakaaf@hotmail.co.uk>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZakZubair/currency-map-country.git"
@@ -40,7 +40,6 @@
     "path": "^0.12.7"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.4.0",
     "lodash.findkey": "^4.6.0"
   },
   "bugs": {
