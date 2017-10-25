@@ -763,6 +763,10 @@ module.exports = {
         'abbr': 'CS',
         'cur': 'EUR'
     },
+    'Serbia': {
+        'abbr': 'RS',
+        'cur': 'RSD'
+    },
     'Seychelles': {
         'abbr': 'SC',
         'cur': 'USD'

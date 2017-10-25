@@ -499,6 +499,10 @@ module.exports = {
         'name': 'Saudi Arabian Riyal (SAR)',
         'symbolFormat': 'SAR {#}'
     },
+    'RSD': {
+        'name': 'Serbian Dinar (RSD)',
+        'symbolFormat': 'RSD {#}'
+    },
     'SCR': {
         'name': 'Seychelles Rupee (SCR)',
         'symbolFormat': 'SCR {#}'
