@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "jest --watch --verbose",
-    "test:coverage": "jest --coverage",
+    "test:coverage": "jest --coverage --verbose",
     "lint": "eslint --config .eslintrc *.js",
     "compile": "babel src -d lib",
     "prepublishOnly": "npm run test && npm run lint && npm run compile"
