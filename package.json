@@ -35,9 +35,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-preset-stage-1": "^6.16.0",
     "babel-register": "^6.24.0",
-    "chai": "^3.5.0",
     "eslint": "^3.19.0",
-    "eslint-config-payscale": "0.0.8",
     "jest": "^21.2.1",
     "path": "^0.12.7"
   },
