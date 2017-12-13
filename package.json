@@ -1,13 +1,13 @@
 {
     "name": "currency-map-country",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Mapping of countries and their primary currency.",
     "main": "./lib/index.js",
     "module": "./src/index.js",
     "scripts": {
-        "test": "jest --verbose",
-        "test:watch": "jest --watch --verbose",
-        "test:coverage": "jest --coverage --verbose",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
         "lint": "eslint --config .eslintrc *.js",
         "compile": "babel src -d lib",
         "prepublishOnly": "npm run test && npm run lint && npm run compile"
