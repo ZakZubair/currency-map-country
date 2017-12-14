@@ -1,4 +1,5 @@
 module.exports = {
     verbose: true,
-    coveragePathIgnorePatterns: ["./lib/"]
+    coveragePathIgnorePatterns: ['./lib/'],
+    testPathIgnorePatterns: ['./lib/']
 };
