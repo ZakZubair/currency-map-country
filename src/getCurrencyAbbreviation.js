@@ -1,7 +1,7 @@
 import getCountry from './getCountry';
 
-const getCurrencyAbbreviation = (countryName, moreCountries = undefined) => {
-    const country = getCountry(countryName, moreCountries = undefined);
+const getCurrencyAbbreviation = (countryName, moreCountries = {}) => {
+    const country = getCountry(countryName, moreCountries);
     if(country) {
         return country.cur;
     }
